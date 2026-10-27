@@ -23,14 +23,14 @@
                     },
                     colors: {
                         brand: {
-                            blue: '#5C67F2',     // Main button/text blue
-                            indigo: '#4F46E5',   // Deeper blue
-                            purple: '#8B5CF6',   // Gradient purple
-                            light: '#EEF2FF',    // Light blue background for active states
+                            blue: '#5C67F2',     
+                            indigo: '#4F46E5',   
+                            purple: '#8B5CF6',   
+                            light: '#EEF2FF',    
                         },
                         text: {
-                            main: '#0F172A',     // Very dark slate/navy for main headings
-                            muted: '#64748B',    // Gray for body text
+                            main: '#0F172A',     
+                            muted: '#64748B',    
                         }
                     },
                     boxShadow: {
@@ -43,7 +43,7 @@
     </script>
     <style>
         body {
-            background-color: #F4F7FC; /* Very light cool grey/blue base */
+            background-color: #F4F7FC;
             background-image: 
                 radial-gradient(circle at 15% 10%, rgba(224, 231, 255, 0.6) 0%, transparent 40%),
                 radial-gradient(circle at 85% 20%, rgba(2ede, 233, 254, 0.5) 0%, transparent 40%),
@@ -113,8 +113,8 @@
 <body class="antialiased min-h-screen pb-12 overflow-x-hidden selection:bg-brand-blue selection:text-white">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full z-50 px-4 pt-6 pb-2">
-        <div class="max-w-[1100px] mx-auto bg-white/80 backdrop-blur-md rounded-full px-4 py-3 flex justify-between items-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white">
+    <nav class="fixed top-0 w-full z-50 px-4 pt-6 pb-2 pointer-events-none">
+        <div class="max-w-[1100px] mx-auto bg-white/80 backdrop-blur-md rounded-full px-4 py-3 flex justify-between items-center shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white pointer-events-auto">
             <!-- Logo -->
             <div class="flex items-center gap-3 pl-2">
                 <div class="w-10 h-10 bg-brand-light text-brand-blue font-bold rounded-xl flex items-center justify-center text-xl">A</div>
@@ -122,22 +122,22 @@
             </div>
             
             <!-- Desktop Menu -->
-        <div class="hidden lg:flex items-center gap-2">
-            <a href="#home" class="px-5 py-2 rounded-full bg-brand-light text-brand-blue font-semibold text-sm">Home</a>
-            <a href="#tentang" class="px-5 py-2 rounded-full text-text-muted hover:text-brand-blue font-medium text-sm transition-colors">Tentang</a>
-            <a href="#pendidikan" class="px-5 py-2 rounded-full text-text-muted hover:text-brand-blue font-medium text-sm transition-colors">Pendidikan</a>
-            <a href="#pengalaman" class="px-5 py-2 rounded-full text-text-muted hover:text-brand-blue font-medium text-sm transition-colors">Pengalaman</a>
-            <a href="#kemampuan" class="px-5 py-2 rounded-full text-text-muted hover:text-brand-blue font-medium text-sm transition-colors">Kemampuan</a>
-            <a href="#kontak" class="px-5 py-2 rounded-full text-text-muted hover:text-brand-blue font-medium text-sm transition-colors">Kontak</a>
-        </div>
+            <div class="hidden lg:flex items-center gap-2">
+                <a href="#home" class="px-5 py-2 rounded-full bg-brand-light text-brand-blue font-semibold text-sm">Home</a>
+                <a href="#tentang" class="px-5 py-2 rounded-full text-text-muted hover:text-brand-blue font-medium text-sm transition-colors">Tentang</a>
+                <a href="#pendidikan" class="px-5 py-2 rounded-full text-text-muted hover:text-brand-blue font-medium text-sm transition-colors">Pendidikan</a>
+                <a href="#pengalaman" class="px-5 py-2 rounded-full text-text-muted hover:text-brand-blue font-medium text-sm transition-colors">Pengalaman</a>
+                <a href="#kemampuan" class="px-5 py-2 rounded-full text-text-muted hover:text-brand-blue font-medium text-sm transition-colors">Kemampuan</a>
+                <a href="#kontak" class="px-5 py-2 rounded-full text-text-muted hover:text-brand-blue font-medium text-sm transition-colors">Kontak</a>
+            </div>
 
-        <!-- CTA -->
-        <a href="#kontak" class="hidden md:flex items-center gap-2 bg-gradient-to-r from-brand-blue to-brand-purple text-white px-6 py-2.5 rounded-full font-medium text-sm shadow-md hover:shadow-lg transition-all">
-            <i class="ph-fill ph-paper-plane-tilt text-lg"></i>
-            Hubungi Saya &rarr;
-        </a>
-        
-        <!-- Mobile Menu Toggle -->
+            <!-- CTA -->
+            <a href="#kontak" class="hidden md:flex items-center gap-2 bg-gradient-to-r from-brand-blue to-brand-purple text-white px-6 py-2.5 rounded-full font-medium text-sm shadow-md hover:shadow-lg transition-all">
+                <i class="ph-fill ph-paper-plane-tilt text-lg"></i>
+                Hubungi Saya &rarr;
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
             <button class="lg:hidden text-2xl text-text-main pr-2"><i class="ph ph-list"></i></button>
         </div>
     </nav>
@@ -165,18 +165,18 @@
                 </p>
 
                 <!-- Action Buttons -->
-            <div class="flex flex-wrap items-center gap-4 pt-2">
-                <button class="flex items-center gap-2 bg-gradient-to-r from-brand-blue to-brand-purple text-white px-8 py-3.5 rounded-2xl font-semibold shadow-[0_10px_20px_rgba(92,103,242,0.2)] hover:shadow-lg transition-all">
-                    <i class="ph ph-file-text text-xl"></i>
-                    Lihat CV &rarr;
-                </button>
-                <a href="#kontak" class="flex items-center gap-2 bg-white text-text-main border border-gray-200 px-8 py-3.5 rounded-2xl font-semibold hover:bg-gray-50 transition-all shadow-sm">
-                    <i class="ph-fill ph-paper-plane-tilt text-brand-blue text-xl"></i>
-                    Hubungi Saya
-                </a>
-            </div>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <button class="flex items-center gap-2 bg-gradient-to-r from-brand-blue to-brand-purple text-white px-8 py-3.5 rounded-2xl font-semibold shadow-[0_10px_20px_rgba(92,103,242,0.2)] hover:shadow-lg transition-all">
+                        <i class="ph ph-file-text text-xl"></i>
+                        Lihat CV &rarr;
+                    </button>
+                    <a href="#kontak" class="flex items-center gap-2 bg-white text-text-main border border-gray-200 px-8 py-3.5 rounded-2xl font-semibold hover:bg-gray-50 transition-all shadow-sm">
+                        <i class="ph-fill ph-paper-plane-tilt text-brand-blue text-xl"></i>
+                        Hubungi Saya
+                    </a>
+                </div>
 
-            <!-- Stats -->
+                <!-- Stats -->
                 <div class="flex flex-wrap gap-4 pt-6">
                     <div class="card-white px-5 py-3 flex items-center gap-3 min-w-[130px]">
                         <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl">
@@ -237,9 +237,8 @@
 
                 <!-- Main Image -->
                 <div class="relative w-[380px] h-[480px] z-10 mr-4 mt-4 animate-float">
-                    <img src="https://placehold.co/380x480/transparent/transparent?text=" alt="" class="absolute inset-0 w-full h-full object-cover z-10">
-                    <!-- Placeholder for actual cutout image, assuming image has transparent background -->
-                    <img src="https://placehold.co/380x480/e0e7ff/1e1b4b?text=Foto+Alfikri" alt="Alfikri Profile" class="w-full h-full object-cover rounded-[2.5rem]" style="clip-path: inset(0 0 0 0 round 2.5rem);">
+                    <!-- FOTO PROFIL ANDA -->
+                    <img src="foto-profil.png" alt="Alfikri Profile" class="w-full h-full object-cover rounded-[2.5rem]" style="clip-path: inset(0 0 0 0 round 2.5rem);">
                     
                     <!-- Decor: Signature & Text inside image area -->
                     <div class="absolute bottom-8 left-6 z-20">
@@ -263,22 +262,22 @@
                 </div>
 
                 <!-- Floating Badge 2 (Analis) -->
-            <div class="absolute bottom-16 -right-6 bg-white p-4 rounded-2xl shadow-float flex items-start gap-3 z-30 border border-white/50 w-[210px] animate-float-reverse">
-                <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl shrink-0">
-                    <i class="ph-bold ph-target"></i>
-                </div>
-                <div>
-                    <p class="font-bold text-text-main text-[13px] leading-snug">Analis • Administrasi<br>Operasional</p>
-                    <p class="text-[10px] text-text-muted mt-1 leading-snug">Siap untuk berbagai<br>kesempatan kerja</p>
+                <div class="absolute bottom-16 -right-6 bg-white p-4 rounded-2xl shadow-float flex items-start gap-3 z-30 border border-white/50 w-[210px] animate-float-reverse">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl shrink-0">
+                        <i class="ph-bold ph-target"></i>
+                    </div>
+                    <div>
+                        <p class="font-bold text-text-main text-[13px] leading-snug">Analis • Administrasi<br>Operasional</p>
+                        <p class="text-[10px] text-text-muted mt-1 leading-snug">Siap untuk berbagai<br>kesempatan kerja</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Tentang Saya Section -->
-    <section id="tentang" class="card-white p-6 lg:p-8 flex flex-col lg:flex-row gap-8 items-stretch mt-12">
-        <!-- Left -->
-        <div class="lg:w-[35%] flex flex-col justify-center">
+        <!-- Tentang Saya Section -->
+        <section id="tentang" class="card-white p-6 lg:p-8 flex flex-col lg:flex-row gap-8 items-stretch mt-12">
+            <!-- Left -->
+            <div class="lg:w-[35%] flex flex-col justify-center">
                 <div class="flex items-center gap-3 mb-3">
                     <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl">
                         <i class="ph-fill ph-user"></i>
@@ -325,15 +324,14 @@
                     <p class="text-[11px] text-text-muted leading-snug">Mudah beradaptasi dengan lingkungan baru</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Pendidikan & Pengalaman -->
-    <section class="grid md:grid-cols-2 gap-6">
-        <!-- Pendidikan -->
-        <div id="pendidikan" class="card-white p-6 lg:p-8 relative overflow-hidden">
-            <div class="flex items-center gap-3 mb-6 relative z-10">
-                <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl">
+        <!-- Pendidikan & Pengalaman -->
+        <section class="grid md:grid-cols-2 gap-6">
+            <!-- Pendidikan -->
+            <div id="pendidikan" class="card-white p-6 lg:p-8 relative overflow-hidden">
+                <div class="flex items-center gap-3 mb-6 relative z-10">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl">
                         <i class="ph-fill ph-graduation-cap"></i>
                     </div>
                     <h3 class="text-xl font-bold text-text-main">Pendidikan</h3>
@@ -357,23 +355,23 @@
                 </div>
                 
                 <!-- Watermark Background -->
-            <i class="ph-fill ph-bank absolute -bottom-4 right-4 text-[8rem] text-indigo-50/50 z-0 rotate-[-10deg]"></i>
-        </div>
+                <i class="ph-fill ph-bank absolute -bottom-4 right-4 text-[8rem] text-indigo-50/50 z-0 rotate-[-10deg]"></i>
+            </div>
 
-        <!-- Pengalaman Kerja -->
-        <div id="pengalaman" class="card-white p-6 lg:p-8 relative overflow-hidden">
-            <div class="flex items-center gap-3 mb-6 relative z-10">
-                <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl">
+            <!-- Pengalaman Kerja -->
+            <div id="pengalaman" class="card-white p-6 lg:p-8 relative overflow-hidden">
+                <div class="flex items-center gap-3 mb-6 relative z-10">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl">
                         <i class="ph-fill ph-briefcase"></i>
                     </div>
                     <h3 class="text-xl font-bold text-text-main">Pengalaman Kerja</h3>
                 </div>
 
                 <div class="relative pl-6 z-10">
-                     <!-- Timeline Line -->
-                     <div class="absolute left-[5px] top-[10px] bottom-0 w-[2px] bg-indigo-100"></div>
-                     <!-- Timeline Dot -->
-                     <div class="absolute left-[-2px] top-[8px] w-4 h-4 bg-white border-[3px] border-brand-blue rounded-full"></div>
+                    <!-- Timeline Line -->
+                    <div class="absolute left-[5px] top-[10px] bottom-0 w-[2px] bg-indigo-100"></div>
+                    <!-- Timeline Dot -->
+                    <div class="absolute left-[-2px] top-[8px] w-4 h-4 bg-white border-[3px] border-brand-blue rounded-full"></div>
 
                     <div class="flex justify-between items-start mb-1">
                         <h4 class="font-bold text-text-main text-[15px]">Traders Family <span class="font-normal text-text-muted">— Analis</span></h4>
@@ -388,14 +386,14 @@
                 </div>
 
                 <!-- Watermark Background -->
-            <i class="ph-fill ph-chart-bar absolute -bottom-4 right-4 text-[8rem] text-indigo-50/50 z-0"></i>
-        </div>
-    </section>
+                <i class="ph-fill ph-chart-bar absolute -bottom-4 right-4 text-[8rem] text-indigo-50/50 z-0"></i>
+            </div>
+        </section>
 
-    <!-- Kemampuan (Skills) -->
-    <section id="kemampuan" class="card-white p-6 lg:p-8">
-        <div class="flex items-center gap-3 mb-6">
-            <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl">
+        <!-- Kemampuan (Skills) -->
+        <section id="kemampuan" class="card-white p-6 lg:p-8">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl">
                     <i class="ph-fill ph-star"></i>
                 </div>
                 <h3 class="text-xl font-bold text-text-main">Kemampuan</h3>
@@ -461,55 +459,60 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-5">
-                <!-- Project 1 -->
-                <div class="group cursor-pointer">
-                    <div class="rounded-2xl overflow-hidden mb-3 bg-gray-50 border border-gray-100 shadow-sm">
-                        <img src="https://placehold.co/600x340/e0e7ff/1e1b4b?text=CV+Personal+Preview" alt="Website CV Personal" class="w-full object-cover">
+                <!-- Project 1 (Datwon Betta) -->
+                <a href="https://datwon-betta.vercel.app/" target="_blank" rel="noopener noreferrer" class="group cursor-pointer block hover:-translate-y-1 transition-transform duration-300">
+                    <div class="rounded-2xl overflow-hidden mb-3 bg-gray-50 border border-gray-100 shadow-sm h-[180px]">
+                        <!-- FOTO PROJECT 1 -->
+                        <img src="IMG_20261027_170321.jpg" alt="Web Jual Ikan Cupang" class="w-full h-full object-cover">
                     </div>
                     <div class="flex justify-between items-start px-1">
                         <div>
-                            <h4 class="font-bold text-text-main text-[14px]">Website CV Personal</h4>
-                            <p class="text-[12px] text-text-muted mt-0.5">Portfolio Website</p>
+                            <h4 class="font-bold text-text-main text-[14px]">Web.app Jual Ikan Cupang</h4>
+                            <p class="text-[12px] text-text-muted mt-0.5">Full Database</p>
                         </div>
                         <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition">
                             <i class="ph-bold ph-arrow-up-right"></i>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Project 2 -->
-                <div class="group cursor-pointer">
-                    <div class="rounded-2xl overflow-hidden mb-3 bg-gray-50 border border-gray-100 shadow-sm">
-                        <img src="https://placehold.co/600x340/222222/ffffff?text=Toko+Aki+Preview" alt="Website Toko Aki" class="w-full object-cover">
+                <!-- Project 2 (Landing Page Aktor China) -->
+                <a href="https://tugas-website-sekolah.netlify.app" target="_blank" rel="noopener noreferrer" class="group cursor-pointer block hover:-translate-y-1 transition-transform duration-300">
+                    <div class="rounded-2xl overflow-hidden mb-3 bg-gray-50 border border-gray-100 shadow-sm h-[180px]">
+                        <!-- FOTO PROJECT 2 -->
+                        <img src="IMG_20261027_170131.jpg" alt="Landing Page Aktor China" class="w-full h-full object-cover">
                     </div>
                     <div class="flex justify-between items-start px-1">
                         <div>
-                            <h4 class="font-bold text-text-main text-[14px]">Website Toko Aki</h4>
-                            <p class="text-[12px] text-text-muted mt-0.5">Business Website</p>
+                            <h4 class="font-bold text-text-main text-[14px]">Landing Page Aktor China</h4>
+                            <p class="text-[12px] text-text-muted mt-0.5">Website Profile & Biodata</p>
                         </div>
                         <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition">
                             <i class="ph-bold ph-arrow-up-right"></i>
                         </div>
                     </div>
-                </div>
+                </a>
 
-                <!-- Project 3 -->
-                <div class="group cursor-pointer">
-                    <div class="rounded-2xl overflow-hidden mb-3 bg-gray-50 border border-gray-100 shadow-sm">
-                        <img src="https://placehold.co/600x340/f0f9ff/0369a1?text=Landing+Page+Preview" alt="Landing Page Company" class="w-full object-cover">
+                <!-- Project 3 (Web Drakor Data Base) -->
+                <a href="https://kdrama-tugas.infy.click/?i=2" target="_blank" rel="noopener noreferrer" class="group cursor-pointer block hover:-translate-y-1 transition-transform duration-300">
+                    <div class="rounded-2xl overflow-hidden mb-3 bg-gray-50 border border-gray-100 shadow-sm h-[180px]">
+                        <!-- FOTO PROJECT 3 -->
+                        <img src="IMG_20261027_165526.jpg" alt="Web Drakor Database" class="w-full h-full object-cover">
                     </div>
                     <div class="flex justify-between items-start px-1">
                         <div>
-                            <h4 class="font-bold text-text-main text-[14px]">Landing Page Company</h4>
-                            <p class="text-[12px] text-text-muted mt-0.5">Company Profile</p>
+                            <h4 class="font-bold text-text-main text-[14px]">Web Drakor Database</h4>
+                            <p class="text-[12px] text-text-muted mt-0.5">Portal Database Drama</p>
                         </div>
                         <div class="w-8 h-8 rounded-lg bg-blue-50 text-brand-blue flex items-center justify-center group-hover:bg-brand-blue group-hover:text-white transition">
                             <i class="ph-bold ph-arrow-up-right"></i>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
-             <div class="md:hidden mt-4 flex justify-center">
+            
+            <!-- Mobile "Lihat Semua" Button -->
+            <div class="md:hidden mt-6 flex justify-center">
                 <a href="#" class="flex items-center gap-1 text-[13px] font-semibold text-brand-blue bg-white border border-blue-100 px-4 py-1.5 rounded-full">
                     Lihat Semua Project <i class="ph-bold ph-arrow-right"></i>
                 </a>
@@ -584,12 +587,12 @@
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
 
-    <!-- Kontak Info Footer Cards -->
-    <section id="kontak" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
-        
-        <div class="card-white p-5 flex items-start gap-3">
+        <!-- Kontak Info Footer Cards -->
+        <section id="kontak" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+            
+            <div class="card-white p-5 flex items-start gap-3">
                 <div class="w-10 h-10 rounded-full bg-blue-50 text-brand-blue flex items-center justify-center text-xl shrink-0">
                     <i class="ph-fill ph-paper-plane-tilt"></i>
                 </div>
@@ -640,8 +643,8 @@
                 <span>Portfolio & CV Personal</span>
             </div>
             <div class="flex gap-4">
-                <a href="#" class="flex items-center gap-1.5 hover:text-brand-blue transition"><i class="ph-fill ph-github-logo text-lg"></i> GitHub: kt700032-alt</a>
-                <a href="#" class="flex items-center gap-1.5 hover:text-brand-blue transition"><i class="ph-fill ph-link text-lg"></i> Portfolio: kt700032-alt.github.io/portfolio-alfikri/</a>
+                <a href="#" class="flex items-center gap-1.5 hover:text-brand-blue transition"><i class="ph-fill ph-github-logo text-lg"></i> GitHub: alfikri583</a>
+                <a href="#" class="flex items-center gap-1.5 hover:text-brand-blue transition"><i class="ph-fill ph-link text-lg"></i> Portfolio: https://github.com/alfikri583/portofolio-alfikri.git</a>
             </div>
         </footer>
 
